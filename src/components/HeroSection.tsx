@@ -45,7 +45,7 @@ const HeroSection = () => {
 
           <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto mb-8">
             Amplify your business with the most trusted local media voice.
-            Reach <span className="text-primary font-semibold">84,400+ engaged followers</span> in Rajgurunagar, Khed & Chakan.
+            Reach <span className="text-primary font-semibold">110K+ engaged followers</span> in Rajgurunagar, Khed & Chakan.
           </p>
 
           {/* CTA Buttons */}
@@ -81,7 +81,7 @@ const HeroSection = () => {
         >
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
             <AnimatedCounter
-              end={84400}
+              end={110000}
               suffix="+"
               label="Followers"
               sublabel="Community Authority"

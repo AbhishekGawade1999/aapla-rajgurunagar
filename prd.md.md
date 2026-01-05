@@ -9,7 +9,7 @@
 
 ## 2. Upfront Impact Dashboard (The "Big Numbers")
 The website's "Hero" section must feature a counter-style dashboard displaying:
-1.  **Followers:** 84.4K+ (Community Authority)
+1.  **Followers:** 110K+ (Community Authority)
 2.  **Total Reach:** [X] Million (Monthly Brand Exposure)
 3.  **Total Views:** [X] Million (Content Performance)
 4.  **Clients Served:** 79 (Proven Business Experience)

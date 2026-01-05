@@ -6,7 +6,7 @@ A high-conversion website for a local media influencer to showcase reach, author
 
 **Aapla Rajgurunagar** is a professional business media kit designed to attract advertisers by showcasing:
 
-- **84.4K+ Followers** – Community Authority
+- **110K+ Followers** – Community Authority
 - **79 Clients Served** – Proven Business Experience
 - **80% Local Density** – Followers from Rajgurunagar/Khed/Chakan belt
 
