@@ -79,7 +79,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="glass-card rounded-3xl p-6 sm:p-10 max-w-5xl mx-auto"
         >
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
             <AnimatedCounter
               end={84400}
               suffix="+"
@@ -105,7 +105,7 @@ const HeroSection = () => {
               sublabel="Business Experience"
             />
             <div className="col-span-2 lg:col-span-1 flex flex-col items-center justify-center">
-              <div className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-5xl text-gradient mb-2">
+              <div className="font-display font-black text-3xl sm:text-4xl lg:text-3xl xl:text-4xl text-gradient mb-2 whitespace-nowrap">
                 80%
               </div>
               <div className="text-foreground font-display font-semibold text-lg sm:text-xl text-center">

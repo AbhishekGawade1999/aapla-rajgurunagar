@@ -31,7 +31,7 @@ const AnimatedCounter = ({
     const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
-      
+
       // Easing function for smooth animation
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
       setCount(Math.floor(easeOutQuart * end));
@@ -53,7 +53,7 @@ const AnimatedCounter = ({
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="text-center"
     >
-      <div className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gradient mb-2">
+      <div className="font-display font-black text-3xl sm:text-4xl lg:text-3xl xl:text-4xl text-gradient mb-2 whitespace-nowrap">
         {prefix}
         {count.toLocaleString()}
         {suffix}
