@@ -44,7 +44,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-muted-foreground text-sm flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> in Rajgurunagar
+            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> in <a href="https://maps.app.goo.gl/Mn7dkLtRZWaommqV8" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Rajgurunagar</a>
           </div>
         </div>
       </div>

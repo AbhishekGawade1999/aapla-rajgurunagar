@@ -142,7 +142,12 @@ const ContactForm = () => {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4 rounded-xl bg-muted/30">
+                <a
+                  href="https://maps.app.goo.gl/Mn7dkLtRZWaommqV8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 rounded-xl bg-muted/30 hover:bg-primary/10 transition-colors"
+                >
                   <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
@@ -150,7 +155,7 @@ const ContactForm = () => {
                     <div className="font-semibold text-foreground">Location</div>
                     <div className="text-muted-foreground">Rajgurunagar, Maharashtra</div>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-muted/30">
                   <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
