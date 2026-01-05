@@ -6,7 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleCall = () => {
-    window.location.href = "tel:+919876543210";
+    window.location.href = "tel:+917776087319";
   };
 
   const scrollToSection = (id: string) => {

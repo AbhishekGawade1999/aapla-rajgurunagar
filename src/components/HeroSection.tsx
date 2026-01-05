@@ -4,14 +4,14 @@ import AnimatedCounter from "./AnimatedCounter";
 
 const HeroSection = () => {
   const handleCall = () => {
-    window.location.href = "tel:+919876543210";
+    window.location.href = "tel:+917776087319";
   };
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
       "Hi! I'm interested in advertising with Aapla Rajgurunagar. Please share details about your packages."
     );
-    window.open(`https://wa.me/919876543210?text=${message}`, "_blank");
+    window.open(`https://wa.me/917776087319?text=${message}`, "_blank");
   };
 
   return (
@@ -34,17 +34,17 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 glass-card rounded-full mb-6">
             <TrendingUp className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">
-              #1 Local Business Media Partner
+              Rajgurunagar's Trusted Digital Voice
             </span>
           </div>
-          
+
           <h1 className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
             <span className="text-foreground">Aapla</span>{" "}
             <span className="text-gradient">Rajgurunagar</span>
           </h1>
-          
+
           <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto mb-8">
-            Amplify your business with the most trusted local media voice. 
+            Amplify your business with the most trusted local media voice.
             Reach <span className="text-primary font-semibold">84,400+ engaged followers</span> in Rajgurunagar, Khed & Chakan.
           </p>
 
@@ -59,7 +59,7 @@ const HeroSection = () => {
               <Phone className="w-5 h-5" />
               Grow Your Business - Call Now
             </motion.button>
-            
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

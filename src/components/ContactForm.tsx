@@ -7,7 +7,7 @@ const ContactForm = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
-  
+
   const [formData, setFormData] = useState({
     businessName: "",
     industry: "",
@@ -18,18 +18,18 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const message = encodeURIComponent(
       `New Business Inquiry:\n\nBusiness: ${formData.businessName}\nIndustry: ${formData.industry}\nInterest: ${formData.interest}\nPhone: ${formData.phone}\n\nMessage: ${formData.message}`
     );
-    
-    window.open(`https://wa.me/919876543210?text=${message}`, "_blank");
-    
+
+    window.open(`https://wa.me/917776087319?text=${message}`, "_blank");
+
     toast({
       title: "Inquiry Sent!",
       description: "We'll get back to you within 24 hours.",
     });
-    
+
     setFormData({
       businessName: "",
       industry: "",
@@ -40,7 +40,7 @@ const ContactForm = () => {
   };
 
   const handleCall = () => {
-    window.location.href = "tel:+919876543210";
+    window.location.href = "tel:+917776087319";
   };
 
   return (
@@ -72,7 +72,7 @@ const ContactForm = () => {
               <h3 className="font-display font-bold text-2xl mb-6 text-foreground">
                 Get In Touch
               </h3>
-              
+
               <div className="space-y-4">
                 <button
                   onClick={handleCall}
@@ -88,7 +88,7 @@ const ContactForm = () => {
                 </button>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/917776087319"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center gap-4 p-4 rounded-xl bg-muted/50 hover:bg-green-500/20 transition-colors group"
