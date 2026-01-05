@@ -38,7 +38,7 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+          <h1 className="font-display font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
             <span className="text-foreground">आपलं</span>{" "}
             <span className="text-gradient">Rajgurunagar</span>
           </h1>

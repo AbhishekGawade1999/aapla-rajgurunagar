@@ -47,7 +47,7 @@ const ServicesSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-20 relative">
+    <section ref={ref} className="py-12 md:py-20 relative">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -77,15 +77,15 @@ const ServicesSection = () => {
                   {service.highlight}
                 </div>
               )}
-              
+
               <div className="w-14 h-14 rounded-xl gradient-instagram flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                 <service.icon className="w-7 h-7 text-primary-foreground" />
               </div>
-              
+
               <h3 className="font-display font-bold text-xl mb-3 text-foreground">
                 {service.title}
               </h3>
-              
+
               <p className="text-muted-foreground leading-relaxed">
                 {service.description}
               </p>

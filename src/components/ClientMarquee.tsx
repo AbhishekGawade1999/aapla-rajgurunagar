@@ -24,7 +24,7 @@ const clients = [
 ];
 
 const ClientMarquee = () => {
-  const duplicatedClients = [...clients, ...clients];
+  const duplicatedClients = [...clients, ...clients, ...clients, ...clients];
 
   return (
     <div className="w-full overflow-hidden py-8">
