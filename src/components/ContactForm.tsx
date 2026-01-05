@@ -252,7 +252,7 @@ const ContactForm = () => {
                     setFormData({ ...formData, phone: e.target.value })
                   }
                   className="w-full px-4 py-3 rounded-xl bg-muted border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-foreground"
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 77760 87319"
                 />
               </div>
 
