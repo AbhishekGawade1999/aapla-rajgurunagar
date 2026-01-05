@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram, Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -28,9 +28,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl gradient-instagram flex items-center justify-center">
-              <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
-            </div>
+            <img
+              src="/logo.jpg"
+              alt="आपलं Rajgurunagar Logo"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
+            />
             <div className="font-display font-bold text-lg sm:text-xl">
               <span className="text-foreground">आपलं</span>{" "}
               <span className="text-gradient">Rajgurunagar</span>

@@ -7,9 +7,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl gradient-instagram flex items-center justify-center">
-              <Instagram className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <img
+              src="/logo.jpg"
+              alt="आपलं Rajgurunagar Logo"
+              className="w-10 h-10 rounded-full object-cover"
+            />
             <div className="font-display font-bold text-lg">
               <span className="text-foreground">आपलं</span>{" "}
               <span className="text-gradient">Rajgurunagar</span>

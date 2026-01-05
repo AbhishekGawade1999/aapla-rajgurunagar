@@ -185,6 +185,9 @@
   },
   "active": "5da64359fb229623",
   "lastOpenFiles": [
+    "vite.config.ts.timestamp-1767619669852-b1ca910997492.mjs",
+    "public/logo.jpg",
+    "src/hooks/use-instagram-stats.ts",
     "logo/logo.jpg",
     "logo/323700074_872547780615020_4520447316888599652_n.jpg",
     "logo",
@@ -196,7 +199,6 @@
     "node_modules/resolve/bin/resolve",
     "node_modules/resolve/bin",
     "node_modules/eslint/bin/eslint.js",
-    "node_modules/eslint/bin",
     "node_modules/lucide-react/README.md",
     "node_modules/date-fns/SECURITY.md",
     "node_modules/date-fns/README.md",
