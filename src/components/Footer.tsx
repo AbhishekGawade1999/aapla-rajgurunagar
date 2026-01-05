@@ -11,7 +11,7 @@ const Footer = () => {
               <Instagram className="w-5 h-5 text-primary-foreground" />
             </div>
             <div className="font-display font-bold text-lg">
-              <span className="text-foreground">Aapla</span>{" "}
+              <span className="text-foreground">आपलं</span>{" "}
               <span className="text-gradient">Rajgurunagar</span>
             </div>
           </div>

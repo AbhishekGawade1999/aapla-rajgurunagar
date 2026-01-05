@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      "Hi! I'm interested in advertising with Aapla Rajgurunagar. Please share details about your packages."
+      "Hi! I'm interested in advertising with आपलं Rajgurunagar. Please share details about your packages."
     );
     window.open(`https://wa.me/917776087319?text=${message}`, "_blank");
   };
@@ -39,7 +39,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            <span className="text-foreground">Aapla</span>{" "}
+            <span className="text-foreground">आपलं</span>{" "}
             <span className="text-gradient">Rajgurunagar</span>
           </h1>
 

@@ -32,7 +32,7 @@ const Header = () => {
               <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
             </div>
             <div className="font-display font-bold text-lg sm:text-xl">
-              <span className="text-foreground">Aapla</span>{" "}
+              <span className="text-foreground">आपलं</span>{" "}
               <span className="text-gradient">Rajgurunagar</span>
             </div>
           </div>
