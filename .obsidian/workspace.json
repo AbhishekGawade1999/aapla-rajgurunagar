@@ -185,6 +185,9 @@
   },
   "active": "5da64359fb229623",
   "lastOpenFiles": [
+    "public/favicon-original.png",
+    "public/favicon-16.png",
+    "public/favicon-32.png",
     "vite.config.ts.timestamp-1767619669852-b1ca910997492.mjs",
     "public/logo.jpg",
     "src/hooks/use-instagram-stats.ts",
@@ -198,7 +201,6 @@
     "node_modules/nanoid/bin",
     "node_modules/resolve/bin/resolve",
     "node_modules/resolve/bin",
-    "node_modules/eslint/bin/eslint.js",
     "node_modules/lucide-react/README.md",
     "node_modules/date-fns/SECURITY.md",
     "node_modules/date-fns/README.md",
