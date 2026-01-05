@@ -59,7 +59,7 @@ const ContactForm = () => {
     }
 
     messageParts.push(``);
-    messageParts.push(`जाहिरातीबद्दल बोलूया का? �`);
+    messageParts.push(`जाहिरातीबद्दल बोलूया का?`);
 
     const message = encodeURIComponent(messageParts.join('\n'));
 
