@@ -16,12 +16,52 @@ const ContactForm = () => {
     message: "",
   });
 
+  // Map internal values to human-readable labels
+  const industryLabels: Record<string, string> = {
+    retail: "Retail & Shops",
+    restaurant: "Restaurant & Food",
+    services: "Services",
+    healthcare: "Healthcare",
+    education: "Education",
+    automotive: "Automotive",
+    other: "Other",
+  };
+
+  const interestLabels: Record<string, string> = {
+    reel: "Promotional Reel",
+    story: "Story Feature",
+    event: "Event Coverage",
+    monthly: "Monthly Package",
+    review: "Business Review",
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const message = encodeURIComponent(
-      `New Business Inquiry:\n\nBusiness: ${formData.businessName}\nIndustry: ${formData.industry}\nInterest: ${formData.interest}\nPhone: ${formData.phone}\n\nMessage: ${formData.message}`
-    );
+    const industryLabel = formData.industry ? industryLabels[formData.industry] || formData.industry : "Not specified";
+    const interestLabel = formData.interest ? interestLabels[formData.interest] || formData.interest : "Not specified";
+
+    // Build a friendly, personalized message
+    let messageParts: string[] = [];
+    messageParts.push(`हाय! �😊`);
+    messageParts.push(``);
+    messageParts.push(`मी *${formData.businessName}* चा आहे. तुमच्या इंस्टाग्राम पेजवरून आलो!`);
+    messageParts.push(``);
+    messageParts.push(`माझ्या बिझनेसबद्दल थोडं सांगतो:`);
+    messageParts.push(`🏪 बिझनेस: ${formData.businessName}`);
+    messageParts.push(`🏭 इंडस्ट्री: ${industryLabel}`);
+    messageParts.push(`🎯 इंटरेस्ट: ${interestLabel}`);
+    messageParts.push(`📱 फोन: ${formData.phone}`);
+
+    if (formData.message && formData.message.trim()) {
+      messageParts.push(``);
+      messageParts.push(`✍️ थोडं अजून: ${formData.message}`);
+    }
+
+    messageParts.push(``);
+    messageParts.push(`जाहिरातीबद्दल बोलूया का? �`);
+
+    const message = encodeURIComponent(messageParts.join('\n'));
 
     window.open(`https://wa.me/917776087319?text=${message}`, "_blank");
 
