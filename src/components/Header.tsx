@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -90,48 +90,68 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden py-4 border-t border-border/50"
-          >
-            <nav className="flex flex-col gap-3">
-              <button
-                onClick={() => scrollToSection("services")}
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-              >
-                Services
-              </button>
-              <button
-                onClick={() => scrollToSection("clients")}
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-              >
-                Clients
-              </button>
-              <button
-                onClick={() => scrollToSection("testimonials")}
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-              >
-                Reviews
-              </button>
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-              >
-                Contact
-              </button>
-              <button
-                onClick={handleCall}
-                className="gradient-instagram px-4 py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2 mt-2"
-              >
-                <Phone className="w-4 h-4" />
-                Call Now
-              </button>
-            </nav>
-          </motion.div>
-        )}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  height: 0,
+                  transition: {
+                    duration: 0.2,
+                    when: "afterChildren"
+                  }
+                },
+                visible: {
+                  opacity: 1,
+                  height: "auto",
+                  transition: {
+                    duration: 0.3,
+                    ease: "easeOut",
+                    when: "beforeChildren",
+                    staggerChildren: 0.1
+                  }
+                }
+              }}
+              className="md:hidden py-4 border-t border-border/50 overflow-hidden"
+            >
+              <nav className="flex flex-col gap-3">
+                {[
+                  { id: "services", label: "Services" },
+                  { id: "clients", label: "Clients" },
+                  { id: "testimonials", label: "Reviews" },
+                  { id: "contact", label: "Contact" },
+                ].map((item) => (
+                  <motion.button
+                    key={item.id}
+                    variants={{
+                      hidden: { opacity: 0, x: -20 },
+                      visible: { opacity: 1, x: 0 }
+                    }}
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
+                  >
+                    {item.label}
+                  </motion.button>
+                ))}
+                <motion.button
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    visible: { opacity: 1, x: 0 }
+                  }}
+                  onClick={handleCall}
+                  className="gradient-instagram px-4 py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2 mt-2"
+                >
+                  <Phone className="w-4 h-4" />
+                  Call Now
+                </motion.button>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </motion.header>
   );
