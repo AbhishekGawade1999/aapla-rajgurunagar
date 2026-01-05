@@ -43,9 +43,9 @@ const ContactForm = () => {
 
     // Build a friendly, personalized message
     let messageParts: string[] = [];
-    messageParts.push(`हाय! �😊`);
+    messageParts.push(`नमस्कार 🙏`);
     messageParts.push(``);
-    messageParts.push(`मी *${formData.businessName}* चा आहे. तुमच्या इंस्टाग्राम पेजवरून आलो!`);
+    messageParts.push(`मी *${formData.businessName}* वरून. तुमच्या इंस्टाग्राम पेजवरून आलो!`);
     messageParts.push(``);
     messageParts.push(`माझ्या बिझनेसबद्दल थोडं सांगतो:`);
     messageParts.push(`🏪 बिझनेस: ${formData.businessName}`);
