@@ -123,7 +123,7 @@ const ContactForm = () => {
                   </div>
                   <div className="text-left">
                     <div className="font-semibold text-foreground">Call Us</div>
-                    <div className="text-muted-foreground">+91 98765 43210</div>
+                    <div className="text-muted-foreground">+91 77760 87319</div>
                   </div>
                 </button>
 
