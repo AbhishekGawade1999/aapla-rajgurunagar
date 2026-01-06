@@ -9,11 +9,11 @@ const Footer = () => {
           <div className="flex items-center gap-3">
             <img
               src="/logo.jpg"
-              alt="आपलं Rajgurunagar Logo"
+              alt="Aapl Rajgurunagar Logo"
               className="w-10 h-10 rounded-full object-cover"
             />
             <div className="font-display font-bold text-lg">
-              <span className="text-foreground">आपलं</span>{" "}
+              <span className="text-foreground">Aapl</span>{" "}
               <span className="text-gradient">Rajgurunagar</span>
             </div>
           </div>

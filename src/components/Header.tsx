@@ -30,11 +30,11 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <img
               src="/logo.jpg"
-              alt="आपलं Rajgurunagar Logo"
+              alt="Aapl Rajgurunagar Logo"
               className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
             />
             <div className="font-display font-bold text-lg sm:text-xl">
-              <span className="text-foreground">आपलं</span>{" "}
+              <span className="text-foreground">Aapl</span>{" "}
               <span className="text-gradient">Rajgurunagar</span>
             </div>
           </div>

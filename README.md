@@ -1,10 +1,10 @@
-# आपलं Rajgurunagar Business Media Kit
+# Aapl Rajgurunagar Business Media Kit
 
 A high-conversion website for a local media influencer to showcase reach, authority, and past client success to local and corporate advertisers in the Rajgurunagar/Khed/Chakan region.
 
 ## 🎯 Overview
 
-**आपलं Rajgurunagar** is a professional business media kit designed to attract advertisers by showcasing:
+**Aapl Rajgurunagar** is a professional business media kit designed to attract advertisers by showcasing:
 
 - **110K+ Followers** – Community Authority
 - **79 Clients Served** – Proven Business Experience
