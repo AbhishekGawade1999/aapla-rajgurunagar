@@ -85,8 +85,8 @@ export default {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+          "0%, 100%": { transform: "translate3d(0, 0, 0)" },
+          "50%": { transform: "translate3d(0, -10px, 0)" },
         },
         pulse: {
           "0%, 100%": { opacity: "1" },
@@ -98,7 +98,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         marquee: "marquee 30s linear infinite",
         "counter-up": "counter-up 0.5s ease-out forwards",
-        float: "float 3s ease-in-out infinite",
+        float: "float 2s ease-in-out infinite",
         pulse: "pulse 2s ease-in-out infinite",
       },
     },

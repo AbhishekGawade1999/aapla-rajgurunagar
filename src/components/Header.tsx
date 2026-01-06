@@ -21,7 +21,7 @@ const Header = () => {
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.3 }}
       className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/50"
     >
       <div className="container mx-auto px-6">
@@ -101,7 +101,7 @@ const Header = () => {
                   opacity: 0,
                   height: 0,
                   transition: {
-                    duration: 0.2,
+                    duration: 0.15,
                     when: "afterChildren"
                   }
                 },
@@ -109,10 +109,10 @@ const Header = () => {
                   opacity: 1,
                   height: "auto",
                   transition: {
-                    duration: 0.3,
+                    duration: 0.2,
                     ease: "easeOut",
                     when: "beforeChildren",
-                    staggerChildren: 0.1
+                    staggerChildren: 0.05
                   }
                 }
               }}

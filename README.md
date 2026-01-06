@@ -36,6 +36,11 @@ Counter-style dashboard displaying impressive metrics including followers, reach
 - **React Query** – Data Fetching
 - **React Router** – Navigation
 
+### ⚡ Performance Optimizations
+- **CSS Animations** – For continuous marquees (better performance than JS)
+- **GPU Acceleration** – Hardware accelerated layers for smooth transitions
+- **Accessibility** – `prefers-reduced-motion` support
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -93,6 +98,7 @@ src/
 - Instagram-inspired color theme
 - Modern UI with smooth animations
 - Optimized for lead conversion
+- **High Performance** – Optimized animations (60fps), GPU acceleration, and reduced motion accessibility
 
 ## 📊 Success Metrics
 

@@ -89,7 +89,7 @@ const ContactForm = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-16"
         >
           <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl mb-4">
@@ -105,7 +105,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
             className="space-y-6"
           >
             <div className="glass-card p-6 rounded-2xl">
@@ -174,7 +174,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.15 }}
           >
             <form
               onSubmit={handleSubmit}

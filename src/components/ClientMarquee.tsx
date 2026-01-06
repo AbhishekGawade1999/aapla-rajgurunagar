@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 
 const clients = [
   "Shree Ganesh Sweets",
@@ -24,35 +24,32 @@ const clients = [
 ];
 
 const ClientMarquee = () => {
-  const duplicatedClients = [...clients, ...clients, ...clients, ...clients];
+  // Only duplicate 2x instead of 4x for better performance
+  const duplicatedClients = [...clients, ...clients];
 
   return (
     <div className="w-full overflow-hidden py-8">
-      <motion.div
-        className="flex gap-8 whitespace-nowrap"
-        animate={{ x: [0, "-50%"] }}
-        transition={{
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 30,
-            ease: "linear",
-          },
+      <div
+        className="flex gap-8 whitespace-nowrap animate-marquee"
+        style={{
+          willChange: "transform",
+          transform: "translateZ(0)"
         }}
       >
         {duplicatedClients.map((client, index) => (
           <div
             key={index}
-            className="glass-card px-6 py-3 rounded-full flex-shrink-0 hover:bg-primary/10 transition-colors duration-300"
+            className="glass-card px-6 py-3 rounded-full flex-shrink-0 hover:bg-primary/10 transition-colors duration-200"
           >
             <span className="text-foreground font-medium text-sm sm:text-base">
               {client}
             </span>
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
 
 export default ClientMarquee;
+

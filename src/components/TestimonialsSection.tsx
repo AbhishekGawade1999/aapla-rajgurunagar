@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-16"
         >
           <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl mb-4">
@@ -56,21 +56,21 @@ const TestimonialsSection = () => {
               key={testimonial.name}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
+              transition={{ duration: 0.3, delay: index * 0.08 }}
               className="glass-card p-6 sm:p-8 rounded-2xl relative"
             >
               <Quote className="absolute top-6 right-6 w-8 h-8 text-primary/30" />
-              
+
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-accent text-accent" />
                 ))}
               </div>
-              
+
               <p className="text-foreground text-lg leading-relaxed mb-6 italic">
                 "{testimonial.quote}"
               </p>
-              
+
               <div>
                 <div className="font-display font-bold text-foreground">
                   {testimonial.name}

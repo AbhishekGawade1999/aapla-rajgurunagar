@@ -52,7 +52,7 @@ const ServicesSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.3 }}
           className="text-center mb-16"
         >
           <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl mb-4">
@@ -69,7 +69,7 @@ const ServicesSection = () => {
               key={service.title}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.06 }}
               className="glass-card p-6 rounded-2xl hover:bg-muted/30 transition-all duration-300 group relative overflow-hidden"
             >
               {service.highlight && (

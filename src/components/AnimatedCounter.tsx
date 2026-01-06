@@ -14,7 +14,7 @@ const AnimatedCounter = ({
   end,
   suffix = "",
   prefix = "",
-  duration = 2.5,
+  duration = 1.5,
   label,
   sublabel,
 }: AnimatedCounterProps) => {
@@ -66,7 +66,7 @@ const AnimatedCounter = ({
       ref={ref}
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       className="text-center"
     >
       <div className="font-display font-black text-3xl sm:text-4xl lg:text-3xl xl:text-4xl text-gradient mb-2 whitespace-nowrap">
