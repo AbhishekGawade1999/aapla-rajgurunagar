@@ -87,13 +87,13 @@ const HeroSection = () => {
               sublabel="Community Authority"
             />
             <AnimatedCounter
-              end={2.5}
+              end={10}
               suffix="M+"
               label="Monthly Reach"
               sublabel="Brand Exposure"
             />
             <AnimatedCounter
-              end={8.2}
+              end={350}
               suffix="M+"
               label="Total Views"
               sublabel="Content Performance"

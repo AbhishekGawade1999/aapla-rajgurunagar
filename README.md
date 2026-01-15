@@ -21,7 +21,7 @@ Counter-style dashboard displaying impressive metrics including followers, reach
 - **Inquiry Form** – Captures business name, industry, and advertising interests
 
 ### Professional Portfolio
-- **Client Marquee** – Scrolling horizontal bar showcasing 79+ clients
+- **Client Marquee** – Scrolling horizontal bar showcasing 1000+ clients
 - **Services Section** – Advertisement packages (Reels, Stories, Event Coverage)
 - **ROI Testimonials** – Text-based quotes from satisfied business owners
 
