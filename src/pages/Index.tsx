@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ClientMarquee from "@/components/ClientMarquee";
+import ClientStories from "@/components/ClientStories";
 import ServicesSection from "@/components/ServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactForm from "@/components/ContactForm";
@@ -22,6 +23,11 @@ const Index = () => {
             </h3>
           </div>
           <ClientMarquee />
+        </section>
+
+
+        <section id="stories">
+          <ClientStories />
         </section>
 
         <section id="services">
